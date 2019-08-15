@@ -17,7 +17,7 @@ public class MIPSdisassember {
 		//Initial address given to begin with
 		int pCounter = 0x0009A040;
 		
-		//Test values from lecture: int testValues[] = {0x00A63820, 0x8D070004, 0xAE57FFFC, 0x10E80004};
+		//Test values: int testValues[] = {0x00A63820, 0x8D070004, 0xAE57FFFC, 0x10E80004};
 		
 		//Input values to decode:
 		int testValues[] = {0x032BA020, 0x8CE90014, 0x12A90003, 0x022DA822, 0xADB30020, 0x02697824, 0xAE8FFFF4, 
