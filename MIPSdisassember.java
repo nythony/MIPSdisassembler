@@ -52,7 +52,7 @@ public class MIPSdisassember {
 		int tfunct; //R-format FUNCTION
 		short tcons; //I-format OFFSET/CONSTANT - 16 bits since it can be signed
 		
-		System.out.print(String.format("%05X", pCounter) + " ");
+		System.out.print(String.format("0x%08X", pCounter) + " ");
 		
 		//Incrementing program counter
 		pCounter += 0b0100;
@@ -134,7 +134,7 @@ public class MIPSdisassember {
 				}
 				
 				//Printing out src , src, target address - instruction already printed
-				System.out.println(" $" + treg1s + ", $" + treg2 + ", address " + String.format("%05X", branchAddress));
+				System.out.println(" $" + treg1s + ", $" + treg2 + ", address " + String.format("0x%08X", branchAddress));
 			}
 		}
 
